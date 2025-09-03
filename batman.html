@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dark Knight - Batman Fan Page</title>
+    <link rel="stylesheet" href="batman.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    <div class="bat-signal" id="batSignal"></div>
+
+    <header>
+        <nav>
+            <div class="logo" onclick="activateBatSignal()">
+                <img src="batlogo.png" alt="Batman Logo">
+                <span>BATMAN</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#enemies">Enemies</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>THE DARK KNIGHT</h1>
+            <p>Gotham's Greatest Protector | The World's Greatest Detective</p>
+            <a href="#about" class="cta-button">Enter the Cave</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Batman</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>🦇 The Dark Knight</h3>
+                <p>Bruce Wayne transformed himself into Batman after witnessing his parents' murder as a child. Using his vast wealth, intellect, and physical prowess, he became Gotham City's legendary protector, striking fear into the hearts of criminals.</p>
+            </div>
+            <div class="card">
+                <h3>🕵️ World's Greatest Detective</h3>
+                <p>Batman's detective skills are unparalleled. His analytical mind, combined with cutting-edge technology and forensic expertise, allows him to solve the most complex mysteries and stay one step ahead of Gotham's villains.</p>
+            </div>
+            <div class="card">
+                <h3>🏙️ Guardian of Gotham</h3>
+                <p>For over 80 years, Batman has been the symbol of justice in Gotham City. His presence alone is enough to deter crime, and his unwavering dedication to protecting the innocent has made him a legend.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="section">
+        <h2>Batman Stats</h2>
+        <div class="stats-wrapper">
+            <div class="stats-bars">
+                <div class="stat">
+                    <span>Intelligence</span>
+                    <div class="bar"><div class="fill red" style="width:100%">100</div></div>
+                </div>
+                <div class="stat">
+                    <span>Strength</span>
+                    <div class="bar"><div class="fill blue" style="width:30%">30</div></div>
+                </div>
+                <div class="stat">
+                    <span>Speed</span>
+                    <div class="bar"><div class="fill blue" style="width:35%">35</div></div>
+                </div>
+                <div class="stat">
+                    <span>Durability</span>
+                    <div class="bar"><div class="fill blue" style="width:50%">50</div></div>
+                </div>
+                <div class="stat">
+                    <span>Power</span>
+                    <div class="bar"><div class="fill blue" style="width:50%">50</div></div>
+                </div>
+                <div class="stat">
+                    <span>Combat</span>
+                    <div class="bar"><div class="fill red" style="width:100%">100</div></div>
+                </div>
+            </div>
+            <div class="stats-image">
+                <img src="batman-profile.jpg" alt="Batman" />
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="enemies" class="section">
+        <h2>Enemies</h2>
+        <div class="enemies-grid">
+            <div class="enemy-card">
+                <img src="two-face.jpg" alt="Two-Face">
+                <h3>Two-Face</h3>
+            </div>
+            <div class="enemy-card">
+                <img src="joker.jpg" alt="Joker">
+                <h3>Joker</h3>
+            </div>
+            <div class="enemy-card">
+                <img src="bane.jpg" alt="Scarecrow">
+                <h3>Bane</h3>
+            </div>
+            <div class="enemy-card">
+                <img src="freeze.jpg" alt="Mr. Freeze">
+                <h3>Mr. Freeze</h3>
+            </div>
+            <div class="enemy-card">
+                <img src="scarecrow.png" alt="Scarecrow">
+                <h3>Scarecrow</h3>
+            </div>
+            <div class="enemy-card">
+                <img src="hugo.jpg" alt="Hugo Strange">
+                <h3>Hugo Strange</h3>
+            </div>
+            <div class="enemy-card">
+                <img src="riddler.jpg" alt="Riddler">
+                <h3>Riddler</h3>
+            </div>
+            <div class="enemy-card">
+                <img src="penguin.jpg" alt="Penguin">
+                <h3>Penguin</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2025 Batman Fan Page. The Dark Knight Never Rests.</p>
+        <p>🦇 "I am vengeance. I am the night. I am Batman!" 🦇</p>
+    </footer>
+    <div class="music-control">
+        <button id="musicBtn" onclick="toggleMusic()">🎵 Play Batman Theme</button>
+        <iframe id="youtubePlayer" src="https://www.youtube.com/watch?v=jS2ZtwqFxQ4&list=RDjS2ZtwqFxQ4&start_radio=1" style="display:none;"></iframe>
+    </div>
+</body>
+</html>
